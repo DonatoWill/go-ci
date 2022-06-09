@@ -7,8 +7,8 @@ on:
 jobs:
   check-application:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
+    strategy: 
+      matrix: #faz com que o step seja executado duas vezes, uma para cada versão
         go: ['1.14', '1.15']
     steps:
       - uses: actions/checkout@v2
